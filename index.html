@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paulo Sales | Designer - Links Úteis</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for crisp icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Font & Tailwind Styles -->
+  <style>
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url('https://raw.githubusercontent.com/pauloeduardosalesnunes-web/paulosalesdesignerlinks/main/sf-pro-display/SF%20Pro%20Display%20Light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * {
+      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif !important;
+      letter-spacing: 0.04em !important; /* Espaçamento entre letras ajustado para 0.04em */
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            siteBg: '#000305',
+            gridBg: '#00090F',
+            gridBorder: '#26292A',
+            subText: '#BBBBBB',
+            blueStart: '#015ABE',
+            blueEnd: '#0096FE',
+          },
+          fontFamily: {
+            sans: ['SF Pro Display', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #000305;
+      color: #FFFFFF;
+      font-family: 'SF Pro Display', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Hero Fade In Effect */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-fade-in {
+      animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Linear Gradient Text Title */
+    .text-gradient-title {
+      background: linear-gradient(90deg, #FEFEFE 0%, #929190 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Linear Gradient CTA Button with infinite animated gradient & smooth hover glow */
+    .btn-cta-gradient {
+      background: linear-gradient(90deg, #015ABE 0%, #0096FE 50%, #015ABE 100%);
+      background-size: 200% 100%;
+      animation: gradientShift 5s linear infinite;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 0 0px rgba(0, 150, 254, 0);
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 200% 50%;
+      }
+    }
+
+    .btn-cta-gradient:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(0, 150, 254, 0.35);
+    }
+
+    /* Tag Button with full #0096FE fill & immediate hover animation */
+    .tag-button {
+      background-color: #000305;
+      border: 1px solid #26292A;
+      color: #BBBBBB;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: default;
+    }
+
+    .tag-button:hover {
+      transform: scale(1.05);
+      background-color: #0096FE;
+      border-color: #0096FE;
+      color: #FEFEFE;
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start py-6 px-4 md:py-10 md:px-8 relative">
+
+  <!-- Main Safety Container (1280px Max Width on Desktop) -->
+  <main class="w-full max-w-[1280px] mx-auto flex flex-col gap-6 md:gap-8 z-10 relative">
+
+    <!-- SECTION 1: HERO CONTAINER -->
+    <section class="w-full rounded-2xl md:rounded-3xl overflow-hidden hero-fade-in">
+      <div class="w-full">
+        <img 
+          src="https://raw.githubusercontent.com/pauloeduardosalesnunes-web/paulosalesdesignerlinks/main/HERO/HERO.png" 
+          alt="Paulo Sales Designer Banner Hero" 
+          class="w-full h-auto block rounded-2xl md:rounded-3xl"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop';"
+        />
+      </div>
+    </section>
+
+    <!-- SECTION 2: GRID 1 (2 COLUMNS) - Standardized height with Grid 2 -->
+    <section class="w-full rounded-2xl md:rounded-3xl border border-[#26292A] bg-[#00090F] overflow-hidden grid grid-cols-1 lg:grid-cols-2 lg:h-[380px]">
+      
+      <!-- 1º COLUNA: CONTEÚDO E CTAS -->
+      <div class="p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center items-start gap-4 order-1 h-full">
+        
+        <!-- Headers -->
+        <div class="flex flex-col gap-2">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gradient-title tracking-tight leading-tight">
+            Comece seu Projeto
+          </h2>
+          <p class="text-subText text-sm sm:text-base leading-snug max-w-md">
+            Se você tem interesse em<br>realizar algum projeto comigo?<br>Fale comigo pelo whatsapp.
+          </p>
+        </div>
+
+        <!-- Botões Interativos (Texto #BBBBBB com animação ao passar o mouse) -->
+        <div class="flex flex-wrap gap-2.5 sm:gap-3 w-full my-1">
+          <div class="tag-button px-5 py-3 rounded-lg text-xs font-medium uppercase tracking-wider">
+            BANNERS
+          </div>
+          <div class="tag-button px-5 py-3 rounded-lg text-xs font-medium uppercase tracking-wider">
+            CRIATIVOS
+          </div>
+          <div class="tag-button px-5 py-3 rounded-lg text-xs font-medium uppercase tracking-wider">
+            LANDING PAGE
+          </div>
+        </div>
+
+        <!-- Botão CTA WhatsApp -->
+        <a 
+          href="https://wa.me/5585999999999?text=Ol%C3%A1%20Paulo!%20Tenho%20interesse%20em%20iniciar%20um%20projeto." 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-cta-gradient inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium text-sm text-white w-full sm:w-auto"
+        >
+          <span>Clique aqui</span>
+        </a>
+
+      </div>
+
+      <!-- 2º COLUNA: IMAGEM FOTO DO PAULO -->
+      <div class="relative w-full h-[280px] sm:h-[340px] lg:h-full bg-[#000305]/40 flex items-end justify-center overflow-hidden order-2 border-t lg:border-t-0 lg:border-l border-[#26292A]/50">
+        <img 
+          src="https://raw.githubusercontent.com/pauloeduardosalesnunes-web/paulosalesdesignerlinks/main/HERO/FOTO.png" 
+          alt="Paulo Sales - Designer" 
+          class="h-full w-full object-cover object-top sm:object-contain lg:object-cover lg:object-top"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop';"
+        />
+      </div>
+
+    </section>
+
+    <!-- SECTION 3: GRID 2 (2 COLUMNS) - Standardized height matching Grid 1 -->
+    <section class="w-full rounded-2xl md:rounded-3xl border border-[#26292A] bg-[#00090F] overflow-hidden grid grid-cols-1 lg:grid-cols-2 lg:h-[380px]">
+      
+      <!-- 1º COLUNA: CONTEÚDO E CTAS -->
+      <div class="p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center items-start gap-4 order-1 h-full">
+        
+        <!-- Headers -->
+        <div class="flex flex-col gap-2">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gradient-title tracking-tight leading-tight">
+            Acesse meu Portfólio
+          </h2>
+          <p class="text-subText text-sm sm:text-base leading-snug max-w-md">
+            Confira alguns dos meus<br>projetos no Behance.
+          </p>
+        </div>
+
+        <!-- Botões Interativos (Texto #BBBBBB com animação ao passar o mouse) -->
+        <div class="flex flex-wrap gap-2.5 sm:gap-3 w-full my-1">
+          <div class="tag-button px-5 py-3 rounded-lg text-xs font-medium uppercase tracking-wider">
+            PORTFÓLIO
+          </div>
+          <div class="tag-button px-5 py-3 rounded-lg text-xs font-medium uppercase tracking-wider">
+            BEHANCE
+          </div>
+          <div class="tag-button px-5 py-3 rounded-lg text-xs font-medium uppercase tracking-wider">
+            PROJETOS
+          </div>
+        </div>
+
+        <!-- Botão CTA Behance -->
+        <a 
+          href="https://www.behance.net/paulosalesdesigner" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-cta-gradient inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium text-sm text-white w-full sm:w-auto"
+        >
+          <span>Clique aqui</span>
+        </a>
+
+      </div>
+
+      <!-- 2º COLUNA: IMAGEM FOTO-1.png DO PORTFÓLIO -->
+      <div class="relative w-full h-[280px] sm:h-[340px] lg:h-full bg-[#000305]/40 flex items-center justify-center overflow-hidden order-2 border-t lg:border-t-0 lg:border-l border-[#26292A]/50">
+        <img 
+          src="https://raw.githubusercontent.com/pauloeduardosalesnunes-web/paulosalesdesignerlinks/main/HERO/FOTO-1.png" 
+          alt="Paulo Sales Behance Portfolio Mockup" 
+          class="w-full h-full object-cover object-center"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop';"
+        />
+      </div>
+
+    </section>
+
+    <!-- SECTION 4: FOOTER -->
+    <footer class="w-full py-6 flex items-center justify-center mt-2">
+      <p class="text-[#BBBBBB] text-xs sm:text-sm text-center font-normal tracking-wider">
+        2026 Paulo Sales Designer. Todos os direitos reservados.
+      </p>
+    </footer>
+
+  </main>
+</body>
+</html>
